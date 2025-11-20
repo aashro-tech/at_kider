@@ -1,0 +1,49 @@
+<!-- ======= Header ======= -->
+<f:render section="MainMenu" arguments="{_all}" />
+<f:section name="MainMenu">
+    
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+        <f:if condition="{settings.rootpage}">
+            <f:link.typolink parameter="{settings.rootpage}" class="navbar-brand">
+                <f:if condition="{settings.logo}"><f:image src="{settings.logo}" alt="" width="40" /></f:if>
+                <f:if condition="{settings.logo_text}"><h1 class="m-0 text-primary">{settings.logo_text}</h1></f:if>
+            </f:link.typolink>
+        </f:if>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto">
+                <f:for each="{MainMenu}" as="item">
+                    <f:if condition="{item.hasSubpages}">
+                        <f:then>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle{f:if(condition: '{item.current}', then: ' active')}" data-bs-toggle="dropdown" title="{item.title}">{item.title}</a>
+                                <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                                    <f:for each="{item.children}" as="child" iteration="i">
+                                        <a href="{child.link}" class="{f:if(condition: '{child.current}', then: 'active')} dropdown-item" title="{child.link}">{child.title}</a>
+                                    </f:for>
+                                </div>
+                            </div>
+                        </f:then>
+                        <f:else>
+                            <a href="{item.link}" class="nav-item nav-link{f:if(condition: '{item.data.doktype} == 4 && {item.data.shortcut} == {data.uid} || {item.current}' ,then: ' active')}" title="{item.title}">{item.title}</a>
+                        </f:else>
+                    </f:if>
+                </f:for>
+            </div>
+            <f:if condition="{settings.button_label} && {settings.button_link}">
+                <f:link.typolink parameter="{settings.button_link}" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">
+                    {settings.button_label}<i class="fa fa-arrow-right ms-3"></i>
+                </f:link.typolink>
+            </f:if>
+        </div>
+    </nav>
+</f:section>

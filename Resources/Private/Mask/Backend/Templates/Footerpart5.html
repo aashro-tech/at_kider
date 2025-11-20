@@ -1,0 +1,15 @@
+<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+    <f:if condition="{data.tx_mask_footerpart5_link1}">
+        <f:if condition="{data.tx_mask_footerpart5_desc}">
+            {data.tx_mask_footerpart5_desc}
+        </f:if>
+    </f:if>
+    <f:if condition="{data.tx_mask_footerpart5_desc2}">
+        {data.tx_mask_footerpart5_desc2 -> f:format.nl2br()}
+    </f:if>
+    <f:if condition="{data.tx_mask_footerpart5_link2}">
+        <f:if condition="{data.tx_mask_footerpart5_name}">
+            {data.tx_mask_footerpart5_name}
+        </f:if>
+    </f:if>
+</div>

@@ -1,0 +1,37 @@
+<f:asset.css identifier="contactinfo-con">
+    .contactinfo-con a{pointer-events:none;}
+    .contactinfo-con .btn.btn-social{ width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; border: 1px solid rgba(255,255,255,0.5); border-radius: 45px; background-color: #FE5D37;}
+</f:asset.css>
+<div class="contactinfo-con">
+    <f:if condition="{data.tx_mask_footerpart1_title}">
+        <h3 class="mb-4">{data.tx_mask_footerpart1_title}</h3>
+    </f:if>
+    <f:if condition="{data.tx_mask_footerpart1_repeat}">
+        <f:for each="{data.tx_mask_footerpart1_repeat}" as="data_item">
+            <p>
+                <f:for each="{data_item.tx_mask_footer_icon}" as="icon">
+                    <f:image image="{icon}" maxWidth="16" maxHeight="16" alt="" />
+                    <f:if condition="{data_item.tx_mask_footer_detail}">
+                       <f:if condition="{icon.properties.link}">
+                           <f:then>
+                               <f:link.external uri="{icon.properties.link}" target="_blank">{data_item.tx_mask_footer_detail}</f:link.external>
+                           </f:then>
+                           <f:else>{data_item.tx_mask_footer_detail}</f:else>
+                       </f:if>
+                    </f:if>
+                </f:for>
+            </p>
+        </f:for>
+        <f:if condition="{data.tx_mask_socia_media}">
+            <div class="d-flex pt-2">
+                <f:for each="{data.tx_mask_socia_media}" as="data_item">
+                    <f:for each="{data_item.tx_mask_social_media_img}" as="mediaicon">
+                        <f:link.typolink parameter="{mediaicon.properties.link}" class="btn btn-outline-light btn-social">
+                          <f:image image="{mediaicon}" maxWidth="16" maxHeight="16" alt=""/>
+                        </f:link.typolink>
+                    </f:for>
+                </f:for>
+            </div>
+        </f:if>
+    </f:if>
+</div>

@@ -1,0 +1,13 @@
+<div class="col-md-6 text-center text-md-end">
+    <div class="footer-menu">                   
+        <f:if condition="{data.tx_mask_footerpart6_repeat}">
+            <f:for each="{data.tx_mask_footerpart6_repeat}" as="data_item">
+                <f:if condition="{data_item.tx_mask_footerpart6_links}">
+                    <f:if condition="{data_item.tx_mask_footerpart6}">
+                        {data_item.tx_mask_footerpart6}
+                    </f:if>
+                </f:if>
+            </f:for>
+        </f:if>
+    </div>
+</div>

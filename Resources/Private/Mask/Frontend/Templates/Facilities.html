@@ -1,0 +1,37 @@
+<div class="container-xxl py-5 facilities-con">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <f:if condition="{data.tx_mask_facilities_heading}">
+                <f:format.html>{data.tx_mask_facilities_heading}</f:format.html>
+            </f:if>
+        </div>
+        <div class="row g-4">
+            <f:if condition="{data.tx_mask_facilities_repeat}">
+                <f:for each="{data.tx_mask_facilities_repeat}" as="data_item">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="facility-item">
+                            <div class="facility-icon" style="background-color: {data_item.tx_mask_bg_color};">
+                                <f:if condition="{data_item.tx_mask_bg_color}">
+                                    <span class="" style="background-color: {data_item.tx_mask_bg_color};"></span>
+                                </f:if>
+                                <f:if condition="{data_item.tx_mask_facilities_img}">
+                                    <f:if condition="{data_item.tx_mask_facilities_img.0}"><f:image image="{data_item.tx_mask_facilities_img.0}" width="48" alt="{data_item.tx_mask_facilities_img.0.properties.alternative}" class="d-icon"/></f:if>
+                                    <f:if condition="{data_item.tx_mask_facilities_img.1}"><f:image image="{data_item.tx_mask_facilities_img.1}" width="48" alt="{data_item.tx_mask_facilities_img.1.properties.alternative}" class="h-icon"/></f:if>
+                                </f:if>
+                                <f:if condition="{data_item.tx_mask_bg_color}">
+                                    <span class=""style="background-color: {data_item.tx_mask_bg_color};"></span>
+                                </f:if>
+                            </div>
+                            <div class="facility-text " style="background-color: {data_item.tx_mask_bg_color};">
+                                <f:if condition="{data_item.tx_mask_facilities_desc}">
+                                    <f:format.html>{data_item.tx_mask_facilities_desc}</f:format.html>
+                                </f:if>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </f:if>
+        </div>
+    </div>
+</div>
+    

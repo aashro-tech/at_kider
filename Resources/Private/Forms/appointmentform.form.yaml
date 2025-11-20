@@ -1,0 +1,140 @@
+
+renderingOptions:
+  submitButtonLabel: 'Send Message'
+type: Form
+identifier: appointmentform
+label: 'Contact Form'
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: '{textarea-1}'
+      recipients:
+        '{email-1}': '{text-1}'
+      senderAddress: aashro@gmail.com
+      senderName: Aashro
+      addHtmlPart: true
+      attachUploads: true
+      title: ''
+    identifier: EmailToSender
+  -
+    options:
+      subject: '{text-2}'
+      recipients:
+        aashro@gmail.com: Aashro
+      senderAddress: '{email-1}'
+      senderName: '{text-1}'
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: Default
+      title: ''
+    identifier: EmailToReceiver
+  -
+    options:
+      message: "We'll be back to you soon !!!"
+      contentElementUid: ''
+    identifier: Confirmation
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: 'Your name'
+        properties:
+          elementDescription: ''
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Your name'
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Please enter name'
+            -
+              code: 1221560718
+              message: 'Please enter name'
+            -
+              code: 1347992400
+              message: 'Please enter name'
+            -
+              code: 1347992453
+              message: 'Please enter name'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email-1
+        label: 'Your Email'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Your Email'
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'please enter the email address'
+            -
+              code: 1221560718
+              message: 'please enter the email address'
+            -
+              code: 1347992400
+              message: 'please enter the email address'
+            -
+              code: 1347992453
+              message: 'please enter the email address'
+            -
+              code: 1221559976
+              message: 'Write in proper formatt..!'
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-2
+        label: Subject
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: Subject
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Child name is required'
+            -
+              code: 1221560718
+              message: 'Child name is required'
+            -
+              code: 1347992400
+              message: 'Child name is required'
+            -
+              code: 1347992453
+              message: 'Child name is required'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Message
+        properties:
+          elementDescription: ''
+          fluidAdditionalAttributes:
+            placeholder: Message
+            required: required
+        validators:
+          -
+            identifier: NotEmpty

@@ -1,0 +1,36 @@
+<!-- Testimonial Start -->
+<div class="container-xxl py-5 clientreview-con">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <f:if condition="{data.tx_mask_client_heading}">
+                <f:format.html>{data.tx_mask_client_heading}</f:format.html>
+            </f:if>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <f:if condition="{data.tx_mask_testimonial_repeat}">
+                <f:for each="{data.tx_mask_testimonial_repeat}" as="data_item">
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <f:if condition="{data_item.tx_mask_client_review}">
+                            <f:format.html>{data_item.tx_mask_client_review}</f:format.html>
+                        </f:if>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <f:for each="{data_item.tx_mask_testimonial_img}" as="file">
+                                <f:image image="{file}" class="img-fluid flex-shrink-0 rounded-circle" maxWidth="90" style="width: 90px; height: 90px;" alt="{file.properties.alternative}"/>
+                            </f:for>
+                            <div class="ps-3">
+                                <f:if condition="{data_item.tx_mask_client_name}">
+                                    <h3 class="mb-1">{data_item.tx_mask_client_name}</h3>
+                                </f:if>
+                                <f:if condition="{data_item.tx_mask_client_profession}">
+                                    <span>{data_item.tx_mask_client_profession}</span>
+                                </f:if>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                </f:for>
+            </f:if>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->

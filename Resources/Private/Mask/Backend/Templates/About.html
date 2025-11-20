@@ -1,0 +1,72 @@
+<f:asset.css identifier="about">
+    .about-con a{
+        pointer-events: none;
+    }
+    .about-con .btn-primary {
+      color: #fff;
+      background-color: #FE5D37;
+      border-color: #FE5D37;
+    }
+    .about-con .text-primary {
+      color: #FE5D37 !important;
+    }
+</f:asset.css>
+<div class="container-xxl py-5 about-con">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <f:if condition="{data.tx_mask_about_description}">
+                    <f:format.raw>{data.tx_mask_about_description}</f:format.raw>
+                </f:if>
+                <div class="row g-4 align-items-center">
+                    <div class="col-sm-6">
+                        <f:if condition="{data.tx_mask_about_link} && {data.tx_mask_about_btn}">
+                            <f:link.typolink parameter="{data.tx_mask_about_link}" class="btn btn-primary rounded-pill py-3 px-5">
+                                {data.tx_mask_about_btn}
+                            </f:link.typolink>
+                        </f:if>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center">
+                            <f:if condition="{data.tx_mask_about_img1}">
+                                <f:for each="{data.tx_mask_about_img1}" as="file">
+                                    <f:image image="{file}" class="rounded-circle flex-shrink-0" alt="{file.0.properties.alternative}" style="width: 45px; height: 45px;" />
+                                </f:for>
+                            </f:if>
+                            <div class="ms-3">
+                                <f:if condition="{data.tx_mask_name}"><h6 class="text-primary mb-1">{data.tx_mask_name}</h6></f:if>
+                                <f:if condition="{data.tx_mask_position}"><small>{data.tx_mask_position}</small></f:if>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <f:if condition="{data.tx_mask_main_img}">
+                            <f:for each="{data.tx_mask_main_img}" as="centerimg">
+                                <f:image image="{centerimg}" class="img-fluid w-75 rounded-circle bg-light p-3" alt="{centerimg.0.properties.alternative}"/>
+                            </f:for>
+                        </f:if>
+                        
+                    </div>
+                    <div class="col-6 text-start" style="margin-top: -150px;">
+                        <f:if condition="{data.tx_mask_left_img}">
+                            <f:for each="{data.tx_mask_left_img}" as="leftimg">
+                                <f:image image="{leftimg}" class="img-fluid w-100 rounded-circle bg-light p-3" alt="{leftimg.0.properties.alternative}"/>
+                            </f:for>
+                        </f:if>
+                    </div>
+                    <div class="col-6 text-end" style="margin-top: -150px;">
+                        <f:if condition="{data.tx_mask_right_image}">
+                            <f:for each="{data.tx_mask_right_image}" as="rightimg">
+                                <f:image image="{rightimg}" class="img-fluid w-100 rounded-circle bg-light p-3" alt="{rightimg.0.properties.alternative}"/>
+                            </f:for>
+                        </f:if>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<f:asset.css identifier="facilities">
+    .facilities-con .facility-item .facility-icon { position: relative; margin: 0 auto; width: 100px; height: 100px; border-radius: 100px; display: flex; align-items: center; justify-content: center; }
+    .facilities-con .facility-item .facility-text { position: relative; min-height: 250px; padding: 30px; border-radius: 100%;display: flex; text-align: center;
+     justify-content: center; flex-direction: column; }
+    .facilities-con .d-icon{display: none;}
+    .facilities-con .facility-item{ color: #FFFFFF !important; }
+    .facilities-con .bg-primary { background-color: #FE5D37 !important;}
+    .facilities-con .facility-item .facility-icon span { position: absolute;content: "";width: 15px;height: 30px;top: 0;left: 0;border-radius: 50%;}
+    .facilities-con .facility-item .facility-icon span:last-child { left: auto;right: 0;}
+    .facilities-con h3{font-family: 'Lobster Two', cursive;font-weight: 700;font-size: 1.75rem;color: #fff !important;}
+</f:asset.css>
+<div class="container-xxl py-5 facilities-con">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <f:if condition="{data.tx_mask_facilities_heading}">
+                <f:format.raw>{data.tx_mask_facilities_heading}</f:format.raw>
+            </f:if>
+        </div>
+        <div class="row g-4">
+            <f:if condition="{data.tx_mask_facilities_repeat}">
+                <f:for each="{data.tx_mask_facilities_repeat}" as="data_item">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="facility-item">
+                            <div class="facility-icon" style="background-color: {data_item.tx_mask_bg_color};">
+                                <f:if condition="{data_item.tx_mask_bg_color}">
+                                    <span class="" style="background-color: {data_item.tx_mask_bg_color};"></span>
+                                </f:if>
+                                <f:if condition="{data_item.tx_mask_facilities_img}">
+                                    <f:if condition="{data_item.tx_mask_facilities_img.0}"><f:image image="{data_item.tx_mask_facilities_img.0}" width="48" alt="{data_item.tx_mask_facilities_img.0.properties.alternative}" class="d-icon"/></f:if>
+                                    <f:if condition="{data_item.tx_mask_facilities_img.1}"><f:image image="{data_item.tx_mask_facilities_img.1}" width="48" alt="{data_item.tx_mask_facilities_img.1.properties.alternative}" class="h-icon"/></f:if>
+                                </f:if>
+                                <f:if condition="{data_item.tx_mask_bg_color}">
+                                    <span class=""style="background-color: {data_item.tx_mask_bg_color};"></span>
+                                </f:if>
+                            </div>
+                            <div class="facility-text " style="background-color: {data_item.tx_mask_bg_color};">
+                                <f:if condition="{data_item.tx_mask_facilities_desc}">
+                                    <f:format.raw>{data_item.tx_mask_facilities_desc}</f:format.raw>
+                                </f:if>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </f:if>
+        </div>
+    </div>
+</div>

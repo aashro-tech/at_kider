@@ -1,0 +1,16 @@
+<div class="col-lg-4 col-md-6">
+    <f:if condition="{data.tx_mask_footerpart3_title}">
+        <h3 class="text-white mb-4">{data.tx_mask_footerpart3_title}</h3>
+    </f:if>
+    <div class="row g-2 pt-2">
+        <f:if condition="{data.tx_mask_footerpart3_repeat}">
+            <f:for each="{data.tx_mask_footerpart3_repeat}" as="data_item">
+                <div class="col-4">
+                    <f:for each="{data_item.tx_mask_footerpart3_img}" as="file">
+                        <f:image image="{file}" class="img-fluid rounded bg-light p-1" maxWidth="120" alt="{file.properties.alternative}"/>
+                    </f:for>
+                </div>
+            </f:for>
+        </f:if>
+    </div>
+</div>

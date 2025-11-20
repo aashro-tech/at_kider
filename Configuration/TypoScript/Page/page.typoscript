@@ -1,0 +1,161 @@
+################
+### CONSTANT ###
+################
+
+plugin {
+    at_kider {
+        settings {
+            logo = {$at_kider.website.settings.logo}
+            logo_text = {$at_kider.website.settings.logo_text}
+            rootpage = {$at_kider.website.settings.rootpage}
+            button_label = {$at_kider.website.settings.button_label}
+            button_link = {$at_kider.website.settings.button_link}
+            copyright = {$at_kider.website.settings.copyright}
+            footer_menu = {$at_kider.website.settings.footer_menu}
+        }
+    }
+}
+
+########################
+### MAIN PAGE OBJECT ###
+########################
+
+page = PAGE
+page {
+
+    // Set default page typenum
+    typeNum = 0
+
+    // Setup favion
+    shortcutIcon = {$at_kider.website.settings.favicon}
+
+    // Set viewport
+    meta {
+        viewport = width=device-width, initial-scale=1.0
+    }
+    
+    // Add external css
+    headerData{
+        1 = TEXT
+        1.value(
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        )
+    }
+    // Initiate all the css-together
+    includeCSS {
+        10 =  EXT:at_kider/Resources/Public/lib/animate/animate.min.css
+        20 =  EXT:at_kider/Resources/Public/lib/owlcarousel/assets/owl.carousel.min.css
+        30 =  EXT:at_kider/Resources/Public/stylesheet/bootstrap.min.css
+        40 =  EXT:at_kider/Resources/Public/stylesheet/style.css
+        50 =  EXT:at_kider/Resources/Public/stylesheet/custom.css
+    }
+
+    includeJS{
+        
+    }
+    
+    // Initiate all the js-together
+    includeJSFooter {
+        10 = https://code.jquery.com/jquery-3.4.1.min.js
+        20 = https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js
+        30 = EXT:at_kider/Resources/Public/lib/wow/wow.min.js
+        40 = EXT:at_kider/Resources/Public/lib/easing/easing.min.js
+        50 = EXT:at_kider/Resources/Public/lib/waypoints/waypoints.min.js
+        60 = EXT:at_kider/Resources/Public/lib/owlcarousel/owl.carousel.min.js
+        70 = EXT:at_kider/Resources/Public/javascript/main.js
+    }
+
+    // Let's start fluid_styled_content
+    10 = FLUIDTEMPLATE
+    10 {
+        layoutRootPath = {$at_kider.website.paths.layoutRootPath}
+        partialRootPath = {$at_kider.website.paths.partialRootPath}
+        templateRootPath = {$at_kider.website.paths.templateRootPath}
+
+        // Let's automatically choose backend layout and template
+        file.stdWrap.cObject = CASE
+        file.stdWrap.cObject {
+            key {
+                data = levelfield:-1, backend_layout_next_level, slide
+                override.field = backend_layout
+            }
+            
+            default = TEXT
+            default.value = {$at_kider.website.paths.templateRootPath}Default.html
+        }
+
+        settings < plugin.at_kider.settings
+
+        // Generate menu with DataProcessing
+        dataProcessing {
+
+            // Main menu
+            101 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            101 {
+                levels = 5
+                special = directory
+                special.value = {$at_kider.website.settings.main_menu}
+                expandAll = 1
+                includeSpacer = 1
+                as = MainMenu
+            }
+
+            // Footer menu
+            102 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            102 {
+                levels = 5
+                special = directory
+                special.value = {$at_kider.website.settings.footer_menu}
+                expandAll = 1
+                includeSpacer = 1
+                as = FooterMenu
+            }
+
+            //BreadCrumb menu
+            103 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            103 {
+                special = rootline
+                special.range = 0|-1
+                includeNotInMenu = 1
+                as = Breadcrumb
+                if {
+                    value = {$at_solutions.website.settings.breadcrumb_menu}
+                    value {
+                        insertData = 1
+                        prioriCalc = 1
+                        stdWrap.wrap = |-1
+                    }
+                    isGreaterThan {
+                        data = level
+                    }
+                }
+            }   
+        }
+    }
+}
+#########################
+### GLOBAL LIB OBJECT ###
+#########################
+
+lib {
+    // Define default content
+    content = CONTENT
+    content < styles.content.get
+
+    defaults < lib.content
+    defaults.select.where = colPos = 0
+
+    FooterPart1 < lib.content
+    FooterPart1.select.where = colPos = 1
+    FooterPart1.select.pidInList = 1
+
+    FooterPart2 < lib.content
+    FooterPart2.select.where = colPos = 2
+    FooterPart2.select.pidInList = 1
+
+    footerMenuTitle = TEXT
+    footerMenuTitle.data = DB:pages:{$at_kider.website.settings.footer_menu}:title
+
+}

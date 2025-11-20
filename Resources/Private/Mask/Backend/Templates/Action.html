@@ -1,0 +1,38 @@
+  <f:asset.css identifier="action">
+      .action-con .bg-light { background-color: #FFF5F3 !important; }
+      .action-con h1{color: #103741;}
+      .action-con .btn-primary { color: #fff;background-color: #FE5D37;border-color: #FE5D37;  }
+      .action-con a{ pointer-events: none; }
+  </f:asset.css>
+  <!-- Call To Action Start -->
+    <div class="container-xxl py-5 action-con">
+        <div class="container">
+            <div class="bg-light rounded">
+                <div class="row g-0">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <f:if condition="{data.tx_mask_action_img}">
+                                <f:for each="{data.tx_mask_action_img}" as="file">
+                                    <f:image image="{file}" class="position-absolute w-100 h-100 rounded" style="object-fit: cover;" />
+                                </f:for>
+                            </f:if>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="h-100 d-flex flex-column justify-content-center p-5">
+                            <f:if condition="{data.tx_mask_action_info}">
+                                <f:format.raw> {data.tx_mask_action_info}</f:format.raw>
+                            </f:if>
+                            <f:if condition="{data.tx_mask_action_btn} && {data.tx_mask_action_btnlink}">
+                               <f:link.typolink parameter="{data.tx_mask_action_btnlink}" class="btn btn-primary py-3 px-5">
+                                   {data.tx_mask_action_btn}<i class="fa fa-arrow-right ms-2"></i>
+                               </f:link.typolink>
+                            </f:if>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Call To Action End -->
+

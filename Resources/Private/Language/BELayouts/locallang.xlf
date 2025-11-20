@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-09-29T11:30:00Z" product-name="at_kider">
+		<header/>
+		<body>
+			<trans-unit id="palette.home">
+                <source>Home Layout</source>
+            </trans-unit>
+			<trans-unit id="default">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="contactinfo">
+				<source>Contact Info</source>
+			</trans-unit>
+			<trans-unit id="gallery">
+				<source>Photo Gallery</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

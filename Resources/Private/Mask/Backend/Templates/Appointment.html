@@ -1,0 +1,28 @@
+<f:asset.css identifier="Appointment">
+    .appointment-con .bg-light { background-color: #FFF5F3 !important; }
+</f:asset.css>
+<!-- Appointment Start -->
+    <div class="container-xxl py-5 appointment-con">
+        <div class="container">
+            <div class="bg-light rounded">
+                <div class="row g-0">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="h-100 d-flex flex-column justify-content-center p-5">
+                            <f:if condition="{data.tx_mask_appointment_title}">
+                                <h1 class="mb-4">{data.tx_mask_appointment_title}</h1>
+                            </f:if>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <f:for each="{data.tx_mask_appointment_img}" as="file">
+                                <f:image image="{file}" class="position-absolute w-100 h-100 rounded" style="object-fit: cover;" />
+                            </f:for>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Appointment End -->

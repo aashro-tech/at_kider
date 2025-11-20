@@ -1,0 +1,47 @@
+<!-- Team Start -->
+<div class="container-xxl py-5 team-con">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <f:if condition="{data.tx_mask_team_heading}">
+                <f:format.html>{data.tx_mask_team_heading}</f:format.html>
+            </f:if>
+        </div>
+        <div class="row g-4">
+            <f:if condition="{data.tx_mask_team_repeat}">
+                <f:for each="{data.tx_mask_team_repeat}" as="data_item">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item position-relative">
+                            <f:if condition="{data_item.tx_mask_team_img}">
+                                <f:for each="{data_item.tx_mask_team_img}" as="memberimg">
+                                    <f:image image="{memberimg}" class="img-fluid rounded-circle w-75" width="305" height="534" alt="{memberimg.properties.alternative}"/>
+                                </f:for>
+                            </f:if>
+                            <div class="team-text">
+                                 <f:if condition="{data_item.tx_mask_member_info}">
+                                    <f:format.html>{data_item.tx_mask_member_info}</f:format.html>
+                                </f:if>
+                                <div class="d-flex align-items-center">
+                                    <f:if condition="{data_item.tx_mask_social_media}">
+                                        <f:for each="{data_item.tx_mask_social_media}" as="data_item_item">
+                                            <f:if condition="{data_item_item.tx_mask_socialmedia_img}">
+                                                <f:for each="{data_item_item.tx_mask_socialmedia_img}" as="socialmedia_icon">
+                                                    <f:link.external uri="{socialmedia_icon.properties.link}" class="btn btn-square btn-primary mx-1" target="_blank">
+                                                        <f:image image="{socialmedia_icon}" maxWidth="16" maxHeight="16" alt="{socialmedia_icon.properties.alternative}" />
+                                                    </f:link.external>
+                                                </f:for>
+                                            </f:if>
+                                        </f:for>
+                                    </f:if>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </f:if>
+        </div>
+    </div>
+</div>              
+ <!-- Team End -->
+
+         
+                   

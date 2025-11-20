@@ -1,0 +1,35 @@
+<f:if condition="{data.uid} != {settings.rootpage}">
+    <f:render section="Breadcrumb" arguments="{_all}" />
+</f:if>
+<f:section name="Breadcrumb">
+    <f:if condition="{Breadcrumb}">
+        <div class="container-xxl py-5 page-header position-relative mb-5">
+            <div class="container py-5">
+                <h1 class="display-2 text-white animated slideInDown mb-4">{data.title}</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb">
+                        <f:for each="{Breadcrumb}" as="item" iteration="i">
+                            <f:if condition="{item.title} && {item.link}">
+                                <f:if condition="{i.isFirst}">
+                                    <f:then>
+                                        <li class="breadcrumb-item"><a href="{item.link}">{item.title}</a></li>
+                                    </f:then>
+                                    <f:else>
+                                        <f:if condition="{i.isLast}">
+                                            <f:then>
+                                                <li class="breadcrumb-item text-white active" aria-current="page">{item.data.title}</li>
+                                            </f:then>
+                                            <f:else>
+                                                <li class="breadcrumb-item"><a href="{item.link}">{item.title}</a></li>
+                                            </f:else>
+                                        </f:if>
+                                    </f:else>
+                                </f:if>
+                           </f:if>
+                        </f:for>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </f:if>
+</f:section>

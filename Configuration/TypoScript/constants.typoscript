@@ -1,0 +1,63 @@
+########################
+### General Settings ###
+########################
+
+# customsubcategory=100=Header 
+# customsubcategory=200=Footer
+# customsubcategory=220=Other
+
+at_kider {
+    website {
+        settings {
+
+            #cat = at_kider/100/a; type=string; label=Favicon Icon
+            favicon = EXT:at_kider/Resources/Public/images/favicon.jpg
+
+            #cat = at_kider/100/b; type=string; label=Upload Logo
+            logo = 
+            
+            #cat = at_kider/100/c; type=string; label=Logo Text
+            logo_text =
+
+            #cat = at_kider/100/d; type=int; label=Main Menu Id
+            main_menu = 1
+            
+            #cat = at_kider/100/e; type=int; label=Root Page Id
+            rootpage = 1
+
+            #cat = at_kider/100/f; type=string; label=Header Button Label
+            button_label = 
+
+            #cat = at_kider/100/g; type=int; label=Header Button Page Id
+            button_link = 
+
+            #cat = at_kider/200/1; type=int; label=Footer Menu Id
+            footer_menu =
+
+            #cat = at_kider/200/2; type=string; label=Copyright Text: Write down your footer's copyright content
+            copyright = 
+
+            #cat = at_kider/220/01; type=boolean; label=Disable TYPO3 Cache
+            no_cache = 0
+
+            #cat = at_kider/220/02; type=boolean; label=Compress JavaScript
+            compress_js = 
+
+            #cat = at_kider/220/03; type=boolean; label=Compress CSS
+            compress_Css =
+
+            #cat = at_kider/220/04; type=boolean; label=Concatenate JavaScript
+            concatenate_js =
+
+            #cat = at_kider/220/05; type=boolean; label=Concatenate CSS
+            concatenate_css =
+        }
+
+        # Define paths for templates, layout and partial
+        paths {
+            templateRootPath = EXT:at_kider/Resources/Private/Templates/
+            layoutRootPath = EXT:at_kider/Resources/Private/Layouts/
+            partialRootPath = EXT:at_kider/Resources/Private/Partials/
+        }
+    }
+}

@@ -1,0 +1,71 @@
+<!-- Classes Start -->
+ <div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <f:if condition="{data.tx_mask_classes_heading}">
+                <f:format.html>{data.tx_mask_classes_heading}</f:format.html>
+            </f:if>
+        </div>
+        <div class="row g-4">
+            <f:if condition="{data.tx_mask_classes_repeat}">
+                <f:for each="{data.tx_mask_classes_repeat}" as="data_item">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="{data_item.tx_mask_data_delay}">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <f:if condition="{data_item.tx_mask_classes_img1}">
+                                    <f:for each="{data_item.tx_mask_classes_img1}" as="classesimg">
+                                        <f:image image="{classesimg}" class="img-fluid rounded-circle" maxWidth="273" alt="{classesimg.properties.alternative}"/>
+                                    </f:for>
+                                </f:if>
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <f:if condition="{data_item.tx_mask_classes_subject} && {data_item.tx_mask_class_link}">
+                                    <f:link.typolink parameter="{data_item.tx_mask_class_link}" class="d-block text-center h3 mt-3 mb-4"> 
+                                        {data_item.tx_mask_classes_subject}
+                                    </f:link.typolink>
+                                </f:if>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <f:for each="{data_item.tx_mask_classes_img2}" as="personimg">
+                                            <f:image image="{personimg}" class="rounded-circle flex-shrink-0" alt="{personimg.properties.alternative}" style="width: 45px; height: 45px;" />
+                                        </f:for>
+                                        <div class="ms-3">
+                                            <f:if condition="{data_item.tx_mask_classes_name}">
+                                                <h6 class="text-primary mb-1">{data_item.tx_mask_classes_name}</h6>
+                                            </f:if>
+                                            <f:if condition="{data_item.tx_mask_classes_position}">
+                                                <small>{data_item.tx_mask_classes_position}</small>
+                                            </f:if>
+                                        </div>
+                                    </div>
+                                    <f:if condition="{data_item.tx_mask_classes_price}">
+                                         <span class="bg-primary text-white rounded-pill py-2 px-3">{data_item.tx_mask_classes_price}</span>
+                                    </f:if>
+                                </div>
+                                <div class="row g-1">
+                                    <f:if condition="{data_item.tx_mask_classes_repeat2}">
+                                        <f:for each="{data_item.tx_mask_classes_repeat2}" as="data_item_item">
+                                            <div class="col-4">
+                                                <div class="border-top border-3 border-primary pt-2">
+                                                    <f:if condition="{data_item_item.tx_mask_classes_details}">
+                                                       <h6 class="mb-1" style="color: {data_item_item.tx_mask_heading_color}"> {data_item_item.tx_mask_classes_details}</h6>
+                                                    </f:if>
+                                                    <f:if condition="{data_item_item.tx_mask_classes_curricular}">
+                                                         <small>{data_item_item.tx_mask_classes_curricular}</small>
+                                                    </f:if>
+                                                </div>
+                                            </div>
+                                        </f:for>
+                                    </f:if>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </f:if>
+        </div>
+    </div>
+</div>
+ <!-- Classes End -->
+
+        

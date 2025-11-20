@@ -1,0 +1,22 @@
+<f:asset.css identifier="error">
+    .error-con a{pointer-events: none;}
+</f:asset.css>
+<div class="container-xxl py-5 wow fadeInUp error-con" data-wow-delay="0.1s">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <f:if condition="{data.tx_mask_error_icon}">
+                    <f:for each="{data.tx_mask_error_icon}" as="erricon">
+                        <f:image image="{erricon}" maxWidth="100" maxHeight="100"  alt=""/>
+                    </f:for>
+                </f:if>
+                <f:if condition="{data.tx_mask_error_detail}">
+                    <f:format.raw>{data.tx_mask_error_detail}</f:format.raw>
+                </f:if>
+                <f:if condition="{data.tx_mask_btn} && {data.tx_mask_err_btnlink}">
+                    <f:link.typolink parameter="{data.tx_mask_err_btnlink}" class="btn btn-primary rounded-pill py-3 px-5">{data.tx_mask_btn}</f:link.typolink>
+                </f:if>
+             </div>
+        </div>
+    </div>
+</div>

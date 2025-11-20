@@ -1,0 +1,41 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true">
+    <formvh:renderRenderable renderable="{element}">
+        <f:if condition="{element.rootForm.renderingOptions._originalIdentifier} == appointment">
+            <f:then>
+                <div class="col-sm-6">
+                    <div class="form-floating">
+                        <f:form.textfield property="{element.identifier}" id="{element.uniqueIdentifier}" class="{element.properties.elementClassAttribute} form-control border-0" errorClass="{element.properties.elementErrorClassAttribute}" additionalAttributes="{formvh:translateElementProperty(element: element, property: 'fluidAdditionalAttributes')}" />
+                        <f:render partial="Field/Field" arguments="{element: element}" contentAs="elementContent"></f:render>
+                    </div>
+                </div>
+            </f:then>
+            
+            <f:else if="{element.rootForm.renderingOptions._originalIdentifier} == appointmentform">
+                <f:if condition="{element.identifier} == 'text-1'">
+                    <f:then>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <f:form.textfield property="{element.identifier}" id="{element.uniqueIdentifier}" class="{element.properties.elementClassAttribute} form-control border-0" errorClass="{element.properties.elementErrorClassAttribute}" additionalAttributes="{formvh:translateElementProperty(element: element, property: 'fluidAdditionalAttributes')}" />
+                                <label for="{element.uniqueIdentifier}">{formvh:translateElementProperty(element: element, property: 'label')}</label>
+                            </div>
+                        </div>
+                    </f:then>
+                    <f:else>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <f:form.textfield property="{element.identifier}" id="{element.uniqueIdentifier}" class="{element.properties.elementClassAttribute} form-control border-0" errorClass="{element.properties.elementErrorClassAttribute}" additionalAttributes="{formvh:translateElementProperty(element: element, property: 'fluidAdditionalAttributes')}" />
+                                <label for="{element.uniqueIdentifier}">{formvh:translateElementProperty(element: element, property: 'label')}</label>
+                            </div>
+                        </div>
+                    </f:else>
+                </f:if>
+            </f:else>
+
+            <f:else>
+                <f:render partial="Field/Field" arguments="{element: element}" contentAs="elementContent">
+                    <f:form.textfield property="{element.identifier}" id="{element.uniqueIdentifier}" class="{element.properties.elementClassAttribute} form-control" errorClass="{element.properties.elementErrorClassAttribute}" additionalAttributes="{formvh:translateElementProperty(element: element, property: 'fluidAdditionalAttributes')}" />
+                </f:render>
+            </f:else>
+        </f:if>
+    </formvh:renderRenderable>
+</html>

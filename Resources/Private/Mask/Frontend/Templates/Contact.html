@@ -1,0 +1,46 @@
+<div class="container-xxl py-5 contact-con">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <f:if condition="{data.tx_mask_contact_heading}"><f:format.html>{data.tx_mask_contact_heading}</f:format.html></f:if>
+        </div>
+        <div class="row g-4 mb-5">
+            <f:if condition="{data.tx_mask_contact_repeat}">
+                <f:for each="{data.tx_mask_contact_repeat}" as="data_item">
+                    <div class="col-md-6 col-lg-4 text-center wow fadeInUp" data-wow-delay="{data_item.tx_mask_data_delay}">
+                        <f:if condition="{data_item.tx_mask_contact_icon}">
+                            <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 75px; height: 75px;">
+                                <f:for each="{data_item.tx_mask_contact_icon}" as="contacticon">
+                                    <f:image image="{contacticon}" maxWidth="32" maxHeight="32" alt="{contacticon.properties.alternative}"/>
+                                </f:for>
+                            </div>
+                        </f:if>
+                        <f:if condition="{data_item.tx_mask_contact_details} && {data_item.tx_mask_contact_link}">
+                            <f:then>
+                                <f:if condition="{data_item.tx_mask_contact_link}">
+                                    <h6><f:link.typolink parameter="{data_item.tx_mask_contact_link}">{data_item.tx_mask_contact_details}</f:link.typolink></h6>
+                                </f:if>
+                            </f:then>
+                            <f:else if="{data_item.tx_mask_contact_details}">
+                                <h6>{data_item.tx_mask_contact_details}</h6>
+                            </f:else>
+                        </f:if>
+                    </div>
+                </f:for>
+            </f:if>
+        </div>
+        <div class="bg-light rounded">
+            <div class="row g-0">
+                <f:if condition="{data.tx_mask_cnt_form}">
+                    <f:for each="{data.tx_mask_cnt_form}" as="data_item">
+                        <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item.uid}</f:cObject>
+                    </f:for>
+                </f:if>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <f:if condition="{data.tx_mask_map}"><f:format.raw>{data.tx_mask_map}</f:format.raw></f:if>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

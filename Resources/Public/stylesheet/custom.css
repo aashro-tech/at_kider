@@ -1,0 +1,65 @@
+/* Header */
+.navbar-brand {
+  gap: 16px;
+}
+/* Carousel Slider */
+.carousel-slider{
+  color: #fff;
+}
+
+.carousel-slider h1{
+  color: #fff;
+}
+
+/* Facilities */
+.d-icon{
+  z-index: 1;
+}
+.facilities-con .h-icon{
+  display: none;
+}
+.facility-item:hover .d-icon{
+  display: none;
+}
+.facility-item:hover .h-icon{
+  display: block;
+}
+
+/* Contact */
+.contact-con h6 a{
+  color: #103741;
+}
+.contact-con .frame-type-form_formframework{ width: 50%; }
+.contact-con .frame-type-form_formframework .col-lg-6{ width: 100%; }
+/* Form submit success message */
+.form-confirm {
+  margin: auto;
+  text-align: center;
+}
+
+/* Footer */
+.footer p a{
+  color: rgba(255,255,255,0.5);
+}
+.footer p img{ margin-right: 10px; }
+/* 404  */
+  .error-con h2{
+   margin-bottom: 1.5rem !important;
+  }
+
+.carousel-slider p:has(> a.btn) {
+  display: inline-block;
+}
+
+@media (min-width: 1200px) {
+  .error-con h1 {
+    font-size: 5rem;
+  }
+  .error-con h2{
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 991px){
+  .contact-con .frame-type-form_formframework{ width: 100%; }
+}

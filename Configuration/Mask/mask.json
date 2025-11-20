@@ -1,0 +1,2060 @@
+{
+    "version": "8.1.0",
+    "restructuringDone": false,
+    "tables": {
+        "pages": {
+            "elements": {
+                "kider_column": {
+                    "color": "",
+                    "colorOverlay": "",
+                    "columns": [],
+                    "description": "",
+                    "descriptions": [],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "kider_column",
+                    "label": "",
+                    "labels": [],
+                    "shortLabel": "",
+                    "sorting": 0
+                }
+            }
+        },
+        "sys_file_reference": {
+            "sql": {
+                "tx_mask_image": {
+                    "sys_file_reference": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            }
+        },
+        "tt_content": {
+            "elements": {
+                "about": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_about_description",
+                        "tx_mask_about_btn",
+                        "tx_mask_about_link",
+                        "tx_mask_about_img1",
+                        "tx_mask_name",
+                        "tx_mask_position",
+                        "tx_mask_left_img",
+                        "tx_mask_main_img",
+                        "tx_mask_right_image"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Add description.",
+                        "Add button label.",
+                        "Add button link.",
+                        "Upload Image",
+                        "Add name.",
+                        "Add position.",
+                        "Upload left image.",
+                        "Upload Center Image",
+                        "Upload right Image."
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "about",
+                    "label": "About Section",
+                    "labels": [
+                        "Description",
+                        "Button Label",
+                        "Button link",
+                        "Image",
+                        "Name",
+                        "Position",
+                        "Left Image",
+                        "Center image",
+                        "Right Image"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 15
+                },
+                "action": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_action_img",
+                        "tx_mask_action_info",
+                        "tx_mask_action_btn",
+                        "tx_mask_action_btnlink"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Upload left Image.",
+                        "Add Information.",
+                        "Add button label.",
+                        "Add button link."
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "action",
+                    "label": "Information",
+                    "labels": [
+                        "Left Image",
+                        "Teacher Information",
+                        "Button Label",
+                        "Button Link"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 16
+                },
+                "appointment": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_appointment_title",
+                        "tx_mask_appointment_form",
+                        "tx_mask_appointment_img"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Add Heading",
+                        "Add appointment form.",
+                        "Upload right image."
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "appointment",
+                    "label": "Appointment",
+                    "labels": [
+                        "Heading",
+                        "Appointment Form",
+                        "Right Image"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 18
+                },
+                "carousel": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_carousel_repeat"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Create new slider item."
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "carousel",
+                    "label": "Carousel Setion",
+                    "labels": [
+                        "Carousel Slider"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 9
+                },
+                "classes": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_classes_heading",
+                        "tx_mask_classes_repeat"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Add heading.",
+                        "Create new classes."
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "classes",
+                    "label": "Classes Section",
+                    "labels": [
+                        "Heading",
+                        "Classes "
+                    ],
+                    "shortLabel": "",
+                    "sorting": 17
+                },
+                "contact": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_contact_heading",
+                        "tx_mask_contact_repeat",
+                        "tx_mask_cnt_form",
+                        "tx_mask_map"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Add heading.",
+                        "Add contact information.",
+                        "",
+                        "To add your location, need to open your place in google maps and click on your added place in maps. Then, click on Share button which is display at Left side. Then, click on 'Embed a map' and Click on 'Copy HTML' . Then, paste copied link here."
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "contact",
+                    "label": "Contact",
+                    "labels": [
+                        "Heading",
+                        "Contact Information Section",
+                        "Contact Form",
+                        "Map"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 22
+                },
+                "facilities": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_facilities_heading",
+                        "tx_mask_facilities_repeat"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Add Heading and Description.",
+                        "Create new facilities."
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "facilities",
+                    "label": "School Facilities",
+                    "labels": [
+                        "Heading",
+                        "Facilities"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 10
+                },
+                "footerpart1": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_footerpart1_title",
+                        "tx_mask_footerpart1_repeat",
+                        "tx_mask_socia_media"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Add title.",
+                        "Add Contact information.",
+                        "Create social media."
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "footerpart1",
+                    "label": "Footer Contact Info",
+                    "labels": [
+                        "Title",
+                        "Contact Information",
+                        "Social Media"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 11
+                },
+                "footerpart3": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_footerpart3_title",
+                        "tx_mask_footerpart3_repeat"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Add Heading.",
+                        "Create new gallery items."
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "footerpart3",
+                    "label": "Photo Gallery",
+                    "labels": [
+                        "Heading",
+                        "Gallery Items"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 13
+                },
+                "team": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_team_heading",
+                        "tx_mask_team_repeat"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Add Heading",
+                        "Add team member."
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "team",
+                    "label": "Team",
+                    "labels": [
+                        "Heading",
+                        "Team Member"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 19
+                },
+                "testimonials": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_client_heading",
+                        "tx_mask_testimonial_repeat"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Add Heading.",
+                        "Add client review."
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "testimonials",
+                    "label": "Client Review",
+                    "labels": [
+                        "Heading",
+                        "Review"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 20
+                },
+                "404": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_error_icon",
+                        "tx_mask_error_detail",
+                        "tx_mask_btn",
+                        "tx_mask_err_btnlink"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Upload Icon Image.",
+                        "Add error details.",
+                        "Add button label.",
+                        "Add button link."
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "404",
+                    "label": "404",
+                    "labels": [
+                        "Icon",
+                        "Details",
+                        "Button label",
+                        "Button Link"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 21
+                }
+            },
+            "sql": {
+                "tx_mask_about_btn": {
+                    "tt_content": {
+                        "tx_mask_about_btn": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_about_description": {
+                    "tt_content": {
+                        "tx_mask_about_description": "mediumtext"
+                    }
+                },
+                "tx_mask_about_img1": {
+                    "tt_content": {
+                        "tx_mask_about_img1": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_about_link": {
+                    "tt_content": {
+                        "tx_mask_about_link": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_action_btn": {
+                    "tt_content": {
+                        "tx_mask_action_btn": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_action_btnlink": {
+                    "tt_content": {
+                        "tx_mask_action_btnlink": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_action_img": {
+                    "tt_content": {
+                        "tx_mask_action_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_action_info": {
+                    "tt_content": {
+                        "tx_mask_action_info": "mediumtext"
+                    }
+                },
+                "tx_mask_appointment_form": {
+                    "tt_content": {
+                        "tx_mask_appointment_form": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_appointment_img": {
+                    "tt_content": {
+                        "tx_mask_appointment_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_appointment_title": {
+                    "tt_content": {
+                        "tx_mask_appointment_title": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_btn": {
+                    "tt_content": {
+                        "tx_mask_btn": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_carousel_repeat": {
+                    "tt_content": {
+                        "tx_mask_carousel_repeat": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_classes_heading": {
+                    "tt_content": {
+                        "tx_mask_classes_heading": "mediumtext"
+                    }
+                },
+                "tx_mask_classes_repeat": {
+                    "tt_content": {
+                        "tx_mask_classes_repeat": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_client_heading": {
+                    "tt_content": {
+                        "tx_mask_client_heading": "mediumtext"
+                    }
+                },
+                "tx_mask_cnt_form": {
+                    "tt_content": {
+                        "tx_mask_cnt_form": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_contact_heading": {
+                    "tt_content": {
+                        "tx_mask_contact_heading": "mediumtext"
+                    }
+                },
+                "tx_mask_contact_repeat": {
+                    "tt_content": {
+                        "tx_mask_contact_repeat": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_err_btnlink": {
+                    "tt_content": {
+                        "tx_mask_err_btnlink": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_error_detail": {
+                    "tt_content": {
+                        "tx_mask_error_detail": "mediumtext"
+                    }
+                },
+                "tx_mask_error_icon": {
+                    "tt_content": {
+                        "tx_mask_error_icon": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_facilities_heading": {
+                    "tt_content": {
+                        "tx_mask_facilities_heading": "mediumtext"
+                    }
+                },
+                "tx_mask_facilities_repeat": {
+                    "tt_content": {
+                        "tx_mask_facilities_repeat": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footerpart1_repeat": {
+                    "tt_content": {
+                        "tx_mask_footerpart1_repeat": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footerpart1_title": {
+                    "tt_content": {
+                        "tx_mask_footerpart1_title": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_footerpart3_repeat": {
+                    "tt_content": {
+                        "tx_mask_footerpart3_repeat": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footerpart3_title": {
+                    "tt_content": {
+                        "tx_mask_footerpart3_title": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_left_img": {
+                    "tt_content": {
+                        "tx_mask_left_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_main_img": {
+                    "tt_content": {
+                        "tx_mask_main_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_map": {
+                    "tt_content": {
+                        "tx_mask_map": "mediumtext"
+                    }
+                },
+                "tx_mask_name": {
+                    "tt_content": {
+                        "tx_mask_name": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_position": {
+                    "tt_content": {
+                        "tx_mask_position": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_right_image": {
+                    "tt_content": {
+                        "tx_mask_right_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_socia_media": {
+                    "tt_content": {
+                        "tx_mask_socia_media": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_team_heading": {
+                    "tt_content": {
+                        "tx_mask_team_heading": "mediumtext"
+                    }
+                },
+                "tx_mask_team_repeat": {
+                    "tt_content": {
+                        "tx_mask_team_repeat": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_testimonial_repeat": {
+                    "tt_content": {
+                        "tx_mask_testimonial_repeat": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_about_btn": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_about_btn",
+                    "key": "about_btn",
+                    "type": "string"
+                },
+                "tx_mask_about_description": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_about_description",
+                    "key": "about_description",
+                    "type": "richtext"
+                },
+                "tx_mask_about_img1": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_about_img1",
+                    "imageoverlayPalette": 1,
+                    "key": "about_img1",
+                    "type": "file"
+                },
+                "tx_mask_about_link": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "link"
+                    },
+                    "fullKey": "tx_mask_about_link",
+                    "key": "about_link",
+                    "type": "link"
+                },
+                "tx_mask_action_btn": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_action_btn",
+                    "key": "action_btn",
+                    "type": "string"
+                },
+                "tx_mask_action_btnlink": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "link"
+                    },
+                    "fullKey": "tx_mask_action_btnlink",
+                    "key": "action_btnlink",
+                    "type": "link"
+                },
+                "tx_mask_action_img": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "fullKey": "tx_mask_action_img",
+                    "imageoverlayPalette": 1,
+                    "key": "action_img",
+                    "type": "file"
+                },
+                "tx_mask_action_info": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_action_info",
+                    "key": "action_info",
+                    "type": "richtext"
+                },
+                "tx_mask_appointment_form": {
+                    "cTypes": [
+                        "form_formframework"
+                    ],
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "tt_content",
+                        "maxitems": "1",
+                        "overrideChildTca": {
+                            "columns": {
+                                "colPos": {
+                                    "config": {
+                                        "default": 999
+                                    }
+                                }
+                            }
+                        },
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_appointment_form",
+                    "key": "appointment_form",
+                    "type": "content"
+                },
+                "tx_mask_appointment_img": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "fullKey": "tx_mask_appointment_img",
+                    "imageoverlayPalette": 1,
+                    "key": "appointment_img",
+                    "type": "file"
+                },
+                "tx_mask_appointment_title": {
+                    "config": {
+                        "nullable": 0,
+                        "required": 1,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_appointment_title",
+                    "key": "appointment_title",
+                    "type": "string"
+                },
+                "tx_mask_btn": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_btn",
+                    "key": "btn",
+                    "type": "string"
+                },
+                "tx_mask_carousel_repeat": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_carousel_repeat",
+                    "key": "carousel_repeat",
+                    "type": "inline"
+                },
+                "tx_mask_classes_heading": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_classes_heading",
+                    "key": "classes_heading",
+                    "type": "richtext"
+                },
+                "tx_mask_classes_repeat": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_classes_repeat",
+                    "key": "classes_repeat",
+                    "type": "inline"
+                },
+                "tx_mask_client_heading": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_client_heading",
+                    "key": "client_heading",
+                    "type": "richtext"
+                },
+                "tx_mask_cnt_form": {
+                    "cTypes": [
+                        "form_formframework"
+                    ],
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "tt_content",
+                        "maxitems": "1",
+                        "minitems": "1",
+                        "overrideChildTca": {
+                            "columns": {
+                                "colPos": {
+                                    "config": {
+                                        "default": 999
+                                    }
+                                }
+                            }
+                        },
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_cnt_form",
+                    "key": "cnt_form",
+                    "type": "content"
+                },
+                "tx_mask_contact_heading": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_contact_heading",
+                    "key": "contact_heading",
+                    "type": "richtext"
+                },
+                "tx_mask_contact_repeat": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "3",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_contact_repeat",
+                    "key": "contact_repeat",
+                    "type": "inline"
+                },
+                "tx_mask_err_btnlink": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "link"
+                    },
+                    "fullKey": "tx_mask_err_btnlink",
+                    "key": "err_btnlink",
+                    "type": "link"
+                },
+                "tx_mask_error_detail": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_error_detail",
+                    "key": "error_detail",
+                    "type": "richtext"
+                },
+                "tx_mask_error_icon": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "fullKey": "tx_mask_error_icon",
+                    "imageoverlayPalette": 1,
+                    "key": "error_icon",
+                    "type": "file"
+                },
+                "tx_mask_facilities_heading": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_facilities_heading",
+                    "key": "facilities_heading",
+                    "type": "richtext"
+                },
+                "tx_mask_facilities_repeat": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_facilities_repeat",
+                    "key": "facilities_repeat",
+                    "type": "inline"
+                },
+                "tx_mask_footerpart1_repeat": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_footerpart1_repeat",
+                    "key": "footerpart1_repeat",
+                    "type": "inline"
+                },
+                "tx_mask_footerpart1_title": {
+                    "config": {
+                        "nullable": 0,
+                        "required": 1,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footerpart1_title",
+                    "key": "footerpart1_title",
+                    "type": "string"
+                },
+                "tx_mask_footerpart3_repeat": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_footerpart3_repeat",
+                    "key": "footerpart3_repeat",
+                    "type": "inline"
+                },
+                "tx_mask_footerpart3_title": {
+                    "config": {
+                        "nullable": 0,
+                        "required": 1,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footerpart3_title",
+                    "key": "footerpart3_title",
+                    "type": "string"
+                },
+                "tx_mask_left_img": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_left_img",
+                    "imageoverlayPalette": 1,
+                    "key": "left_img",
+                    "type": "file"
+                },
+                "tx_mask_main_img": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "fullKey": "tx_mask_main_img",
+                    "imageoverlayPalette": 1,
+                    "key": "main_img",
+                    "type": "file"
+                },
+                "tx_mask_map": {
+                    "config": {
+                        "nullable": 0,
+                        "required": 1,
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_map",
+                    "key": "map",
+                    "type": "text"
+                },
+                "tx_mask_name": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_name",
+                    "key": "name",
+                    "type": "string"
+                },
+                "tx_mask_position": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_position",
+                    "key": "position",
+                    "type": "string"
+                },
+                "tx_mask_right_image": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_right_image",
+                    "imageoverlayPalette": 1,
+                    "key": "right_image",
+                    "type": "file"
+                },
+                "tx_mask_socia_media": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_socia_media",
+                    "key": "socia_media",
+                    "type": "inline"
+                },
+                "tx_mask_team_heading": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_team_heading",
+                    "key": "team_heading",
+                    "type": "richtext"
+                },
+                "tx_mask_team_repeat": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "3",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_team_repeat",
+                    "key": "team_repeat",
+                    "type": "inline"
+                },
+                "tx_mask_testimonial_repeat": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_testimonial_repeat",
+                    "key": "testimonial_repeat",
+                    "type": "inline"
+                }
+            }
+        },
+        "tx_mask_carousel_repeat": {
+            "sql": {
+                "tx_mask_carousel_img": {
+                    "tx_mask_carousel_repeat": {
+                        "tx_mask_carousel_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_carousel_info": {
+                    "tx_mask_carousel_repeat": {
+                        "tx_mask_carousel_info": "mediumtext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_carousel_img": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "description": "Upload background image.",
+                    "fullKey": "tx_mask_carousel_img",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_carousel_repeat",
+                    "key": "carousel_img",
+                    "label": "Image",
+                    "order": 1,
+                    "type": "file"
+                },
+                "tx_mask_carousel_info": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 1,
+                        "type": "text"
+                    },
+                    "description": "Add content description for slide.",
+                    "fullKey": "tx_mask_carousel_info",
+                    "inlineParent": "tx_mask_carousel_repeat",
+                    "key": "carousel_info",
+                    "label": "Content",
+                    "order": 2,
+                    "type": "richtext"
+                }
+            }
+        },
+        "tx_mask_classes_repeat": {
+            "sql": {
+                "tx_mask_class_link": {
+                    "tx_mask_classes_repeat": {
+                        "tx_mask_class_link": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_classes_img1": {
+                    "tx_mask_classes_repeat": {
+                        "tx_mask_classes_img1": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_classes_img2": {
+                    "tx_mask_classes_repeat": {
+                        "tx_mask_classes_img2": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_classes_name": {
+                    "tx_mask_classes_repeat": {
+                        "tx_mask_classes_name": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_classes_position": {
+                    "tx_mask_classes_repeat": {
+                        "tx_mask_classes_position": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_classes_price": {
+                    "tx_mask_classes_repeat": {
+                        "tx_mask_classes_price": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_classes_repeat2": {
+                    "tx_mask_classes_repeat": {
+                        "tx_mask_classes_repeat2": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_classes_subject": {
+                    "tx_mask_classes_repeat": {
+                        "tx_mask_classes_subject": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_class_link": {
+                    "config": {
+                        "nullable": 0,
+                        "required": 1,
+                        "type": "link"
+                    },
+                    "description": "Add class link.",
+                    "fullKey": "tx_mask_class_link",
+                    "inlineParent": "tx_mask_classes_repeat",
+                    "key": "class_link",
+                    "label": "Class Link",
+                    "order": 3,
+                    "type": "link"
+                },
+                "tx_mask_classes_img1": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "description": "Upload image.",
+                    "fullKey": "tx_mask_classes_img1",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_classes_repeat",
+                    "key": "classes_img1",
+                    "label": "image",
+                    "order": 1,
+                    "type": "file"
+                },
+                "tx_mask_classes_img2": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": ""
+                    },
+                    "description": "Upload Teacher Image.",
+                    "fullKey": "tx_mask_classes_img2",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_classes_repeat",
+                    "key": "classes_img2",
+                    "label": "Teacher Image",
+                    "order": 4,
+                    "type": "file"
+                },
+                "tx_mask_classes_name": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "description": "Upload teacher name.",
+                    "fullKey": "tx_mask_classes_name",
+                    "inlineParent": "tx_mask_classes_repeat",
+                    "key": "classes_name",
+                    "label": "Teacher Name",
+                    "order": 5,
+                    "type": "string"
+                },
+                "tx_mask_classes_position": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "description": "Add teacher position.",
+                    "fullKey": "tx_mask_classes_position",
+                    "inlineParent": "tx_mask_classes_repeat",
+                    "key": "classes_position",
+                    "label": "Teacher Position",
+                    "order": 6,
+                    "type": "string"
+                },
+                "tx_mask_classes_price": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "description": "add price.",
+                    "fullKey": "tx_mask_classes_price",
+                    "inlineParent": "tx_mask_classes_repeat",
+                    "key": "classes_price",
+                    "label": "Price",
+                    "order": 7,
+                    "type": "string"
+                },
+                "tx_mask_classes_repeat2": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "3",
+                        "type": "inline"
+                    },
+                    "description": "Add about classes information.",
+                    "fullKey": "tx_mask_classes_repeat2",
+                    "inlineParent": "tx_mask_classes_repeat",
+                    "key": "classes_repeat2",
+                    "label": "Classes Information",
+                    "order": 8,
+                    "type": "inline"
+                },
+                "tx_mask_classes_subject": {
+                    "config": {
+                        "nullable": 0,
+                        "required": 1,
+                        "type": "input"
+                    },
+                    "description": "Add class name.",
+                    "fullKey": "tx_mask_classes_subject",
+                    "inlineParent": "tx_mask_classes_repeat",
+                    "key": "classes_subject",
+                    "label": "Class Name",
+                    "order": 2,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_classes_repeat2": {
+            "sql": {
+                "tx_mask_classes_curricular": {
+                    "tx_mask_classes_repeat2": {
+                        "tx_mask_classes_curricular": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_classes_details": {
+                    "tx_mask_classes_repeat2": {
+                        "tx_mask_classes_details": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_heading_color": {
+                    "tx_mask_classes_repeat2": {
+                        "tx_mask_heading_color": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_classes_curricular": {
+                    "config": {
+                        "nullable": 0,
+                        "required": 1,
+                        "type": "input"
+                    },
+                    "description": "Add details.",
+                    "fullKey": "tx_mask_classes_curricular",
+                    "inlineParent": "tx_mask_classes_repeat2",
+                    "key": "classes_curricular",
+                    "label": "Details",
+                    "order": 3,
+                    "type": "string"
+                },
+                "tx_mask_classes_details": {
+                    "config": {
+                        "nullable": 0,
+                        "required": 1,
+                        "type": "input"
+                    },
+                    "description": "Add Heading.",
+                    "fullKey": "tx_mask_classes_details",
+                    "inlineParent": "tx_mask_classes_repeat2",
+                    "key": "classes_details",
+                    "label": "Heading",
+                    "order": 2,
+                    "type": "string"
+                },
+                "tx_mask_heading_color": {
+                    "config": {
+                        "nullable": 0,
+                        "size": 10,
+                        "type": "color"
+                    },
+                    "description": "Add Heading color.",
+                    "fullKey": "tx_mask_heading_color",
+                    "inlineParent": "tx_mask_classes_repeat2",
+                    "key": "heading_color",
+                    "label": "Heading Color",
+                    "order": 1,
+                    "type": "colorpicker"
+                }
+            }
+        },
+        "tx_mask_contact_repeat": {
+            "sql": {
+                "tx_mask_contact_details": {
+                    "tx_mask_contact_repeat": {
+                        "tx_mask_contact_details": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_contact_icon": {
+                    "tx_mask_contact_repeat": {
+                        "tx_mask_contact_icon": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_contact_link": {
+                    "tx_mask_contact_repeat": {
+                        "tx_mask_contact_link": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_contact_details": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "description": "Add details.",
+                    "fullKey": "tx_mask_contact_details",
+                    "inlineParent": "tx_mask_contact_repeat",
+                    "key": "contact_details",
+                    "label": "Details",
+                    "order": 2,
+                    "type": "string"
+                },
+                "tx_mask_contact_icon": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "description": "Upload Image.",
+                    "fullKey": "tx_mask_contact_icon",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_contact_repeat",
+                    "key": "contact_icon",
+                    "label": "Icon",
+                    "order": 1,
+                    "type": "file"
+                },
+                "tx_mask_contact_link": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "link"
+                    },
+                    "description": "Add link.",
+                    "fullKey": "tx_mask_contact_link",
+                    "inlineParent": "tx_mask_contact_repeat",
+                    "key": "contact_link",
+                    "label": "Link",
+                    "order": 3,
+                    "type": "link"
+                }
+            }
+        },
+        "tx_mask_facilities_repeat": {
+            "sql": {
+                "tx_mask_bg_color": {
+                    "tx_mask_facilities_repeat": {
+                        "tx_mask_bg_color": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_facilities_desc": {
+                    "tx_mask_facilities_repeat": {
+                        "tx_mask_facilities_desc": "mediumtext"
+                    }
+                },
+                "tx_mask_facilities_img": {
+                    "tx_mask_facilities_repeat": {
+                        "tx_mask_facilities_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_bg_color": {
+                    "config": {
+                        "nullable": 0,
+                        "size": 10,
+                        "type": "color"
+                    },
+                    "description": "Add background hover color.",
+                    "fullKey": "tx_mask_bg_color",
+                    "inlineParent": "tx_mask_facilities_repeat",
+                    "key": "bg_color",
+                    "label": "BackGround Hover Color ",
+                    "order": 1,
+                    "type": "colorpicker"
+                },
+                "tx_mask_facilities_desc": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "required": 1,
+                        "type": "text"
+                    },
+                    "description": "Add description.",
+                    "fullKey": "tx_mask_facilities_desc",
+                    "inlineParent": "tx_mask_facilities_repeat",
+                    "key": "facilities_desc",
+                    "label": "Description",
+                    "order": 3,
+                    "type": "richtext"
+                },
+                "tx_mask_facilities_img": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "2",
+                        "minitems": "2"
+                    },
+                    "description": "Upload Two Image.",
+                    "fullKey": "tx_mask_facilities_img",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_facilities_repeat",
+                    "key": "facilities_img",
+                    "label": "Image",
+                    "order": 2,
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_footerpart1_repeat": {
+            "sql": {
+                "tx_mask_footer_detail": {
+                    "tx_mask_footerpart1_repeat": {
+                        "tx_mask_footer_detail": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_footer_icon": {
+                    "tx_mask_footerpart1_repeat": {
+                        "tx_mask_footer_icon": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_footer_detail": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "description": "Add Details.",
+                    "fullKey": "tx_mask_footer_detail",
+                    "inlineParent": "tx_mask_footerpart1_repeat",
+                    "key": "footer_detail",
+                    "label": "Detail",
+                    "order": 2,
+                    "type": "string"
+                },
+                "tx_mask_footer_icon": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "description": "Upload Icon",
+                    "fullKey": "tx_mask_footer_icon",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_footerpart1_repeat",
+                    "key": "footer_icon",
+                    "label": "Icon",
+                    "order": 1,
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_footerpart3_repeat": {
+            "sql": {
+                "tx_mask_footerpart3_img": {
+                    "tx_mask_footerpart3_repeat": {
+                        "tx_mask_footerpart3_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_footerpart3_img": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "description": "Upload gallery photo.",
+                    "fullKey": "tx_mask_footerpart3_img",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_footerpart3_repeat",
+                    "key": "footerpart3_img",
+                    "label": "Photo",
+                    "order": 1,
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_socia_media": {
+            "sql": {
+                "tx_mask_social_media_img": {
+                    "tx_mask_socia_media": {
+                        "tx_mask_social_media_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_social_media_img": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "description": "Upload social media Image or link.",
+                    "fullKey": "tx_mask_social_media_img",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_socia_media",
+                    "key": "social_media_img",
+                    "label": "Social Media Image",
+                    "order": 1,
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_social_media": {
+            "sql": {
+                "tx_mask_socialmedia_img": {
+                    "tx_mask_social_media": {
+                        "tx_mask_socialmedia_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_socialmedia_img": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "description": "Upload social medial Image or link.",
+                    "fullKey": "tx_mask_socialmedia_img",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_social_media",
+                    "key": "socialmedia_img",
+                    "label": "Social Media Image",
+                    "order": 1,
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_team_repeat": {
+            "sql": {
+                "tx_mask_member_info": {
+                    "tx_mask_team_repeat": {
+                        "tx_mask_member_info": "mediumtext"
+                    }
+                },
+                "tx_mask_social_media": {
+                    "tx_mask_team_repeat": {
+                        "tx_mask_social_media": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_team_img": {
+                    "tx_mask_team_repeat": {
+                        "tx_mask_team_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_member_info": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "description": "Add Team Member Information.",
+                    "fullKey": "tx_mask_member_info",
+                    "inlineParent": "tx_mask_team_repeat",
+                    "key": "member_info",
+                    "label": "Information",
+                    "order": 2,
+                    "type": "richtext"
+                },
+                "tx_mask_social_media": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "3",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_social_media",
+                    "inlineParent": "tx_mask_team_repeat",
+                    "key": "social_media",
+                    "label": "Socia Media",
+                    "order": 3,
+                    "type": "inline"
+                },
+                "tx_mask_team_img": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "description": "Upload Team Member Image.",
+                    "fullKey": "tx_mask_team_img",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_team_repeat",
+                    "key": "team_img",
+                    "label": "Image",
+                    "order": 1,
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_testimonial_repeat": {
+            "sql": {
+                "tx_mask_client_name": {
+                    "tx_mask_testimonial_repeat": {
+                        "tx_mask_client_name": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_client_profession": {
+                    "tx_mask_testimonial_repeat": {
+                        "tx_mask_client_profession": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_client_review": {
+                    "tx_mask_testimonial_repeat": {
+                        "tx_mask_client_review": "mediumtext"
+                    }
+                },
+                "tx_mask_testimonial_img": {
+                    "tx_mask_testimonial_repeat": {
+                        "tx_mask_testimonial_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_client_name": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "description": "Add client name.",
+                    "fullKey": "tx_mask_client_name",
+                    "inlineParent": "tx_mask_testimonial_repeat",
+                    "key": "client_name",
+                    "label": "Client Name",
+                    "order": 2,
+                    "type": "string"
+                },
+                "tx_mask_client_profession": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "description": "Add client profession.",
+                    "fullKey": "tx_mask_client_profession",
+                    "inlineParent": "tx_mask_testimonial_repeat",
+                    "key": "client_profession",
+                    "label": "Client Profession",
+                    "order": 3,
+                    "type": "string"
+                },
+                "tx_mask_client_review": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "description": "Add Client Review.",
+                    "fullKey": "tx_mask_client_review",
+                    "inlineParent": "tx_mask_testimonial_repeat",
+                    "key": "client_review",
+                    "label": "Client Review",
+                    "order": 4,
+                    "type": "richtext"
+                },
+                "tx_mask_testimonial_img": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": "1"
+                    },
+                    "description": "Upload Client Image",
+                    "fullKey": "tx_mask_testimonial_img",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_testimonial_repeat",
+                    "key": "testimonial_img",
+                    "label": "Client Image",
+                    "order": 1,
+                    "type": "file"
+                }
+            }
+        }
+    }
+}

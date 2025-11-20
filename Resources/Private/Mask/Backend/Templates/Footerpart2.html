@@ -1,0 +1,14 @@
+<div class="col-lg-3 col-md-6">
+    <f:if condition="{data.tx_mask_footerpart2_title}">
+       <h3 class="text-white mb-4" style="color: black;"> {data.tx_mask_footerpart2_title}</h3>
+    </f:if>
+    <f:if condition="{data.tx_mask_footerpart2_repeat}">
+        <f:for each="{data.tx_mask_footerpart2_repeat}" as="data_item">
+            <f:if condition="{data_item.tx_mask_footerpart2_links}">
+                <f:if condition="{data_item.tx_mask_footerpart2_page}">
+                   {data_item.tx_mask_footerpart2_page}
+                </f:if>
+            </f:if>
+        </f:for>
+    </f:if>
+</div>

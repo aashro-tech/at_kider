@@ -1,0 +1,42 @@
+mod {
+  web_layout {
+    BackendLayouts {
+      # BACKENDLAYOUT: kider column
+      kider_column {
+        title = LLL:EXT:at_kider/Resources/Private/Language/BELayouts/locallang.xlf:palette.home
+        icon = EXT:at_kider/Resources/Public/Icons/BELayouts/default.svg
+        config {
+          backend_layout {
+            colCount = 2
+            rowCount = 2
+            rows {
+              1 {
+                columns{
+                  1{
+                    name = LLL:EXT:at_kider/Resources/Private/Language/BELayouts/locallang.xlf:default
+                    colPos = 0
+                    colspan = 2
+                  }
+                }
+              }
+              2 {
+                columns {
+                  1 {
+                    name = LLL:EXT:at_kider/Resources/Private/Language/BELayouts/locallang.xlf:contactinfo
+                    colPos = 1
+                    colspan = 1
+                  }
+                  2 {
+                    name = LLL:EXT:at_kider/Resources/Private/Language/BELayouts/locallang.xlf:gallery
+                    colPos = 2
+                    colspan = 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

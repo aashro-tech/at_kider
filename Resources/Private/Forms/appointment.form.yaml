@@ -1,0 +1,195 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+type: Form
+identifier: appointment
+label: 'Make Appointment'
+prototypeName: standard
+finishers:
+  -
+    options:
+      message: 'Your appointment is successfully send. Thank you !!'
+      contentElementUid: ''
+    identifier: Confirmation
+  -
+    options:
+      subject: 'Appointment Booking'
+      recipients:
+        aashro@gmail.com: Aashro
+      senderAddress: '{email-1}'
+      senderName: '{text-1}'
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: Default
+      title: ''
+    identifier: EmailToReceiver
+  -
+    options:
+      subject: 'Appointment Booking'
+      recipients:
+        '{email-1}': '{text-1}'
+      senderAddress: aashro@gmail.com
+      senderName: Aashro
+      addHtmlPart: true
+      attachUploads: true
+      title: ''
+    identifier: EmailToSender
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: 'Gurdian Name'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Gurdian Name'
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Guardian name must required !'
+            -
+              code: 1221560718
+              message: 'Guardian name must required !'
+            -
+              code: 1347992400
+              message: 'Guardian name must required !'
+            -
+              code: 1347992453
+              message: 'Guardian name must required !'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email-1
+        label: 'Gurdian Email'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Gurdian Email'
+          validationErrorMessages:
+            -
+              code: 1221559976
+              message: 'Email Id is invalid !'
+            -
+              code: 1221560910
+              message: 'Email address of guardian must required !'
+            -
+              code: 1221560718
+              message: 'Email address of guardian must required !'
+            -
+              code: 1347992400
+              message: 'Email address of guardian must required !'
+            -
+              code: 1347992453
+              message: 'Email address of guardian must required !'
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-2
+        label: 'Child Name'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Child Name'
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Child name must required !'
+            -
+              code: 1221560718
+              message: 'Child name must required !'
+            -
+              code: 1347992400
+              message: 'Child name must required !'
+            -
+              code: 1347992453
+              message: 'Child name must required !'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        properties:
+          fluidAdditionalAttributes:
+            step: '1'
+            placeholder: 'Child Age'
+            required: required
+            min: '3'
+            max: '10'
+          validationErrorMessages:
+            -
+              code: 1221560288
+              message: 'Enter only numeric value !'
+            -
+              code: 1221563685
+              message: 'Age must be 3 to 10 years !'
+            -
+              code: 1221561046
+              message: 'Age must be 3 to 10 years !'
+            -
+              code: 1221560910
+              message: 'Enter age of child !'
+            -
+              code: 1221560718
+              message: 'Enter age of child !'
+            -
+              code: 1347992400
+              message: 'Enter age of child !'
+            -
+              code: 1347992453
+              message: 'Enter age of child !'
+        type: Number
+        identifier: number-1
+        label: 'Child Age'
+        validators:
+          -
+            identifier: Number
+          -
+            identifier: NotEmpty
+          -
+            options:
+              minimum: '3'
+              maximum: '10'
+            identifier: NumberRange
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Message
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: Message
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Please give some message !'
+            -
+              code: 1221560718
+              message: 'Please give some message !'
+            -
+              code: 1347992400
+              message: 'Please give some message !'
+            -
+              code: 1347992453
+              message: 'Please give some message !'
+        validators:
+          -
+            identifier: NotEmpty
